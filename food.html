@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+
+   
+   
+*{
+    font-family:"kalam",cursive;
+    padding:0;margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    text-transform:capitalize;
+}
+html{
+    overflow-x:hidden;
+    font-size:62.5%;
+}   
+    .gallery1{
+      min-height: 100vh;
+    }
+    
+    .gallery1 .box-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 90%;
+      margin:0 auto;
+    }
+    
+    .gallery1 .box-container .box{
+      height:20rem;
+      width:30rem;
+      margin:2rem;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .gallery1 .box-container .box img{
+      height:100%;
+      width:100%;
+      object-fit: cover;
+      
+    }
+    
+    .gallery1 .box-container .box .icons{
+      position: absolute;
+      top:120%; left: 0;
+      background:linear-gradient(transparent,white);
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      height:100%;
+      width: 100%;
+      opacity: 0;
+      transition: .2s linear;
+    }
+    
+    .gallery1 .box-container .box:hover .icons{
+      opacity: 1;
+      top:0;
+      color:black;
+    }
+    .background{
+        background-repeat: no-repeat;
+      background-size: 1700px 1500px;
+    
+    }
+    #food .heading{
+        color:aquamarine;
+        text-align:center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 5rem;
+    }
+     
+#me{
+        padding-top: 2rem;
+        padding-bottom: 2rem;   
+    
+    color:rgb(39, 197, 197);
+    text-align:center;
+    font-size: 2.5rem;
+    }
+   
+    #how{
+        height:3.5rem;
+    width: 15rem;
+    background: #0098a1;
+    color:#fff;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin:1rem 0;
+    box-shadow: 0 .3rem .5rem var(#0098a1);
+    opacity: .7;
+    text-align:center;
+    }
+    
+    
+</style>
+</head>
+        <body background="data:image/jpeg;base64,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" id="food">
+            <section id="gallery1" class="gallery1">
+
+                <h1 class="heading"><span>F</span>ood</h1>
+                
+                <div class="box-container">
+                
+                <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9t3pYGtQQuNrBjcOQXo0YgnWn92x3MAXRrg&usqp=CAU" alt="">
+                    <div class="icons">
+                        <b><h1>chinese food</h1></b>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1126,w_2000,x_0,y_181/f_auto,q_auto,w_1100/v1554932288/shape/mentalfloss/12531-istock-637790866.jpg" alt="">
+                    <div class="icons">
+                        <b><h1>Germany food</h1></b>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2019/09/spaghetti-meatballs.jpg?fit=1200%2C879&ssl=1" alt="">
+                    
+                    <div class="icons">
+                        <b><h1>Italian food</h1></b>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="https://miro.medium.com/max/803/1*LjxCjwdsUlmdbO6UaHYBVw.png" alt="">
+                    <div class="icons">
+                        <b><h1>Indian Food</h1></b>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="https://www.khaosodenglish.com/wp-content/uploads/2019/08/CIB_1-1068x601.jpg" alt="">
+                    <div class="icons">
+                        <b><h1>NorthIndia Food</h1></b>
+                    </div>
+                </div>
+            
+                <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChuCN8Vvk_02ZZhP9NBQ42Z2gevGHQCUz2Q&usqp=CAU" alt="">
+                   
+                    <div class="icons">
+                        <b><h1>SouthIndian Food</h1></b> 
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmB5oIbBCUyGDzFPtFxucNajN_DErx6bYFpQ&usqp=CAU" alt="">
+                   
+                    <div class="icons">
+                        <b><h1>Egypt food</h1></b>
+                    </div>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="https://www.mccain.com/media/3552/selection-of-mccain-food-offerings-header.jpg">
+                    <img src="https://www.mccain.com/media/3552/selection-of-mccain-food-offerings-header.jpg" alt=""></a>
+                   
+                    <div class="icons">
+                       <b> <h1>American food</h1></b>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://www.expatica.com/app/uploads/sites/2/2020/03/Leche-frita-1024x683.jpg" alt="">
+                    <div class="icons">
+                        <b><h1>Spanish food</h1></b>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://m.economictimes.com/thumb/msid-70813564,width-1200,height-900,resizemode-4,imgsize-348620/momos.jpg" alt="">
+                    <div class="icons">
+                        <b><h1>Nepal food</h1></b>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://images.japancentre.com/page_elements/image1s/1513/original/sushi-bars-best-japanese-food.jpg?1470240553" alt="">
+                    <div class="icons">
+                        <b><h1>japanese food</h1></b>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__480.jpg" alt="">
+                    <div class="icons">
+                        <b><h1>Germany food</h1></b>
+                    </div>
+                </div>
+               <div>
+                <div id="me">
+                    <td><h3 style="color:rgb(39, 197, 197);
+                     padding-top: 2rem;
+     font-size: 3.5rem;">food you like</h3></td> <td class="c1" ><input type ="text" style="color:black; background-color:aqua;padding-bottom: 1rem;" >
+                         </td>
+                         </div>
+                         <diV><a href="Mini6.html"><button id="how">Submit</button></a></diV>
+            </div>
+            
+            </section>
+           </div>
+        </body>
+</html>

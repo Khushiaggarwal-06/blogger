@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+
+.gallery{
+  min-height: 100vh; 
+}
+
+.gallery .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin:0 auto;
+}
+
+.gallery .box-container .box{
+  height:20rem;
+  width:30rem;
+  margin:2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .icons{
+  position: absolute;
+  top:120%; left: 0;
+  background:linear-gradient(transparent, #333);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.gallery .box-container .box:hover .icons{
+  opacity: 1;
+  top:0;
+}
+
+.gallery .box-container .box .icons a{
+  color:#fff;
+  text-shadow: 0 .1rem .3rem #000;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.gallery .box-container .box .icons a:hover{
+  color:#0098a1;
+}
+.bd{ background: url(https://techmeetups.com/wp-content/uploads/2017/10/image.jpg)no-repeat center center fixed;
+     background-size: 1700px 1500px;}
+ 
+</style>
+
+
+</head>
+<body class=" bd">
+<section id="gallery" class="gallery">
+
+<h1 class="heading" style="font-size:60px;">AMERICA</h1>
+
+<div class="box-container">
+
+     <div class="box">
+        <img src="https://static.rentcars.com/imagens/modules/localidade/about/983-desktop-location-description.png" alt="NEW YORK">
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;">NEW YORK </P>
+          
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://cdn.theculturetrip.com/wp-content/uploads/2019/12/gettyimages-1143355576.jpg "	alt="LOS ANGELES">	<div class="icons">
+		 <p  style="font-size:40px; color: white;"> LOS ANGELES </P>
+          
+
+        </div>
+    </div>
+
+    <div class="box" >
+        <img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-USA-WashingtonDC-CapitolBuilding-488869710-f11photo-copy.jpg " alt="WASHINGTON D.C.">
+        <div class="icons">
+		     <p  style="font-size:40px; color: white;"> WASHINGTON D.C. </P>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://news.bitcoin.com/wp-content/uploads/2016/05/austin.jpg" alt="AUSTIN">       <div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">AUSTIN  </P>
+            
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://media.timeout.com/images/105658075/image.jpg" alt="chicago">	
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">CHICAGO  </P>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="box">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2FuJTIwZnJhbmNpc2NvfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="San Francisco">		
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">SAN FRANCISCO </P>
+            
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+</body>
+</html>
+

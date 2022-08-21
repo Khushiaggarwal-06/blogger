@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+
+.gallery{
+  min-height: 100vh; 
+}
+
+.gallery .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin:0 auto;
+}
+
+.gallery .box-container .box{
+  height:20rem;
+  width:30rem;
+  margin:2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .icons{
+  position: absolute;
+  top:120%; left: 0;
+  background:linear-gradient(transparent, #333);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.gallery .box-container .box:hover .icons{
+  opacity: 1;
+  top:0;
+}
+
+.gallery .box-container .box .icons a{
+  color:#fff;
+  text-shadow: 0 .1rem .3rem #000;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.gallery .box-container .box .icons a:hover{
+  color:#0098a1;
+}
+.bd{ background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGYW2tJt2Pc2ggW6BIVrx7xwSON3FJ9dCYiQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 1700px 1500px;}
+</style>
+
+
+</head>
+<body class="bd">
+<section id="gallery" class="gallery">
+
+<h1 class="heading" style="font-size:60px">SPAIN</h1>
+
+<div class="box-container">
+
+     <div class="box">
+        <img src=" https://img.emg-services.net/HtmlPages/HtmlPage17358/madridoverview.png" alt="#">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;">MADRID </P>
+          
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://cdn.getyourguide.com/img/location/5ffeb37430ad4.jpeg/88.jpg " alt="#">
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;"> GRANADA </P>
+          
+
+        </div>
+    </div>
+
+    <div class="box" >
+        <img src="https://i.pinimg.com/564x/bd/ff/71/bdff7105a5ec8130bb8c14f1a8c0b58c.jpg " alt="#">
+        <div class="icons">
+		     <p  style="font-size:40px; color: white;"> SEVILLE </P>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src=" https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/49/province-of-barcelona.jpg?w=1100&h=600&s=1" alt="#">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;"> BARCELONA </P>
+            
+        </div>
+    </div>
+
+    <div class="box">
+        <img src=" https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/01/Palm-Trees-lining-a-street-in-Valencia-Spain.jpg" alt="#">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;"> VALENCIA </P>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1dl7o2IOp43KNY9Ex8H6iHwWrW6EhSZ3RjCpl2atleUnNctvR86Z01JGkCajZSafRfE&usqp=CAU " alt="#">
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">BIBAO </P>
+            
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+</body>
+</html>
+

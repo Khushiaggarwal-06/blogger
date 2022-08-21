@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+
+.gallery{
+  min-height: 100vh; 
+}
+
+.gallery .box-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin:0 auto;
+}
+
+.gallery .box-container .box{
+  height:20rem;
+  width:30rem;
+  margin:2rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .box-container .box img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .icons{
+  position: absolute;
+  top:120%; left: 0;
+  background:linear-gradient(transparent, #333);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height:100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.gallery .box-container .box:hover .icons{
+  opacity: 1;
+  top:0;
+}
+
+.gallery .box-container .box .icons a{
+  color:#fff;
+  text-shadow: 0 .1rem .3rem #000;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.gallery .box-container .box .icons a:hover{
+  color:#0098a1;
+}
+.bd{ background: url(https://wallpapercave.com/wp/wp2874367.jpg);
+  background-repeat: no-repeat;
+  background-size: 1700px 1500px;}
+</style>
+
+
+</head>
+<body class="bd">
+<section id="gallery" class="gallery">
+
+<h1 class="heading" style="font-size:60px">INDIA</h1>
+
+<div class="box-container">
+
+
+<div class="box">
+        <img srC="https://hhib.b-cdn.net/wp-content/uploads/2019/05/assam.jpg" alt="ASSAM">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">ASSAM  </P>
+            
+        </div>
+    </div>
+
+    
+
+    <div class="box">
+        <img src="https://cdn-0.nomadicweekends.com/wp-content/uploads/2018/09/white-land.jpg " alt="KASHMIR">
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">KASHMIR </P>
+            
+        </div>
+    </div>
+
+     <div class="box">
+        <img src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg " alt="RAJASTHAN">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;">RAJASTHAN </P>
+          
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://pbs.twimg.com/media/D9COq8RUwAAhFYi.jpg" alt="PUNJAB">	
+		<div class="icons">
+		 <p  style="font-size:40px; color: white;"> PUNJAB </P>
+          
+
+        </div>
+    </div>
+
+    <div class="box" >
+        <img src="https://static.toiimg.com/photo/78365955.cms " alt="ODISHA">
+        <div class="icons">
+		     <p  style="font-size:40px; color: white;">ODISHA </P>
+           
+        </div>
+    </div>
+
+    <div class="box">
+        <img src=" https://images.newindianexpress.com/uploads/user/imagelibrary/2020/9/3/w900X450/Alleppey.jpg" alt="KERALA">
+        <div class="icons">
+		 <p  style="font-size:40px; color: white;text-align: center;">KERALA  </P>
+            
+        </div>
+    </div>
+
+    
+
+</div>
+
+</section>
+
+</body>
+</html>
